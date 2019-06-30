@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="最小误判概率准则判决当按某种准则把待识别模式判属某类时，应意识到存在判错的可能,就是说在用统计准则判决某一具体的模式 x 的类别时，判决结果可能是错误的，把实属$\omega_j$类的模式判为属于$\omega_i$类   对于两类问题，统计判决的基本方法是根据类的概率和概密将模式的特征空间$\Omega$划分成两个区域 最小误判概率准则是使得总的误判概率$P(e)$最小, 等价于使正确分类识别概">
+<meta name="keywords" content="deep learning,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/05/23/最小误判概率准则判决/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="最小误判概率准则判决当按某种准则把待识别模式判属某类时，应意识到存在判错的可能,就是说在用统计准则判决某一具体的模式 x 的类别时，判决结果可能是错误的，把实属$\omega_j$类的模式判为属于$\omega_i$类   对于两类问题，统计判决的基本方法是根据类的概率和概密将模式的特征空间$\Omega$划分成两个区域 最小误判概率准则是使得总的误判概率$P(e)$最小, 等价于使正确分类识别概">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-22T20:06:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="最小误判概率准则判决当按某种准则把待识别模式判属某类时，应意识到存在判错的可能,就是说在用统计准则判决某一具体的模式 x 的类别时，判决结果可能是错误的，把实属$\omega_j$类的模式判为属于$\omega_i$类   对于两类问题，统计判决的基本方法是根据类的概率和概密将模式的特征空间$\Omega$划分成两个区域 最小误判概率准则是使得总的误判概率$P(e)$最小, 等价于使正确分类识别概">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">love your life</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-最小误判概率准则判决" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/23/最小误判概率准则判决/" class="article-date">
+  <time datetime="2019-05-23T04:10:07.378Z" itemprop="datePublished">2019-05-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="最小误判概率准则判决"><a href="#最小误判概率准则判决" class="headerlink" title="最小误判概率准则判决"></a>最小误判概率准则判决</h1><p>当按某种准则把待识别模式判属某类时，应意识到<strong>存在判错</strong>的可能,就是说在用统计准则判决某一具体的模式 <em>x</em> 的类别时，判决结果可能是错误的，把实属$\omega_j$类的模式判为属于$\omega_i$类  </p>
+<p>对于两类问题，统计判决的基本方法是根据类的概率和概密将模式的特征空间$\Omega$划分成两个区域</p>
+<p>最小误判概率准则是使得总的误判概率$P(e)$最小, 等价于使正确分类识别概率$P(c)$最大。<br>$$<br>max[P(c)] = \max_{\omega_i}[\int_{\omega_i}P(\omega_i)p(x|\omega_i)dx + \int_{\omega_2}P(\omega_2)p(x|\omega_2)dx]<br>$$<br>最小误判概率准则下的判决规则：<br>如果<br>$$P(\omega_1)p(x|\omega_1) &gt; P(\omega_2)p(x|\omega_2)$$<br>则判 $x\in\omega_1$</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/23/最小误判概率准则判决/" data-id="cjxj2zil9000108zfloxeqgie" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/23/最小误判概率准则判决/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/19/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
